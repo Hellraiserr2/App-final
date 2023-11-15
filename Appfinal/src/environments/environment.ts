@@ -2,7 +2,8 @@ import { initializeApp } from "firebase/app";
 
 
 export const environment = {
-  production: false
+  production: false,
+  mapPk:'pk.eyJ1IjoiaGVsbHJhaXNlcnIyIiwiYSI6ImNsbnR5MjVtODA3eWIya283djB6bTZya2gifQ.pobj6tcVNShRHszZZCoeVg'
 
 };
 

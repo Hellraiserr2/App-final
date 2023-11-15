@@ -112,7 +112,8 @@
               }
             ],
             "styles": ["src/theme/variables.scss", "src/global.scss"],
-            "scripts": []
+            "scripts": ["node_modules/mapbox-gl/dist/mapbox-gl.js",
+            "node_modules/@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.js"]
           },
           "configurations": {
             "ci": {
@@ -136,7 +137,8 @@
   "cli": {
     "schematicCollections": [
       "@ionic/angular-toolkit"
-    ]
+    ],
+    "analytics": false
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
