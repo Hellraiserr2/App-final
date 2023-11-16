@@ -4,9 +4,10 @@ import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FirestoreModule } from '@angular/fire/firestore';
-import { environment } from '../environments/environment';
+// Importa el servicio MapCustomService (ajusta la ruta según la ubicación real del servicio)
+import { MapCustomService } from '../app/map-custom.service';
 
+import { environment } from '../environments/environment';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],

@@ -11,7 +11,7 @@ export class MapCustomService {
   map: mapboxgl.Map;
 
   constructor() {
-    this.mapbox.accessToken = 'TU_TOKEN_DE_ACCESO_DE_MAPBOX';
+    this.mapbox.accessToken = 'pk.eyJ1IjoiaGVsbHJhaXNlcnIyIiwiYSI6ImNsbnR5MjVtODA3eWIya283djB6bTZya2gifQ.pobj6tcVNShRHszZZCoeVg';
 
     this.map = new this.mapbox.Map({
       container: 'map', // Reemplaza 'map-container' con el ID de tu contenedor de mapa

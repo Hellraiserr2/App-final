@@ -1,20 +1,30 @@
-import { Component, OnInit } from '@angular/core';
-import { MapCustomService } from './map-custom.service';
+import { Component } from '@angular/core';
 
+interface Componente{
+  name:string;
+  icon:string;
+  redirecTo: string;
+}
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
-export class TuComponenteComponent implements OnInit {
+export class AppComponent {
+  constructor() {}
 
-  constructor(private mapService: MapCustomService) { }
+  componentes : Componente[]=[
+    {
+      name:'Inicio',
+      icon: 'home-outline',
+      redirecTo:'/home'
+    },
+    {
+      name:'Card',
+      icon: 'bug-outline',
+      redirecTo:'/mapa'
+    },
 
-  ngOnInit(): void {
-    // Puedes acceder al mapa a través del servicio
-    const map = this.mapService.map;
-
-    // Realizar operaciones adicionales en el mapa si es necesario
-  }
+  ]
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MapCustomService } from '../map-custom.service';
 @Component({
   selector: 'app-mapa',
   templateUrl: './mapa.page.html',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapaPage implements OnInit {
 
-  constructor() { }
+  constructor(private mapService: MapCustomService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    // Puedes acceder al mapa a través del servicio
+    const map = this.mapService.map;
+
+    // Realizar operaciones adicionales en el mapa si es necesario
   }
-
 }
