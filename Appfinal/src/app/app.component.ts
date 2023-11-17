@@ -17,13 +17,19 @@ export class AppComponent {
     {
       name:'Inicio',
       icon: 'home-outline',
-      redirecTo:'/home'
+      redirecTo:'home'
     },
     {
-      name:'Card',
+      name:'mapa',
       icon: 'bug-outline',
-      redirecTo:'/mapa'
+      redirecTo:'mapa'
     },
+    {
+      name:'formulario',
+      icon: 'bug-outline',
+      redirecTo:'formulario'
+    }
+
 
   ]
 
