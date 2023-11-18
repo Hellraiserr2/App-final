@@ -1,35 +1,22 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button (click)="mostrarMenu()">
-        <ion-icon slot="icon-only" name="menu-outline" color="warning"></ion-icon>
-        
-      </ion-button>
-    </ion-buttons>
-    <ion-title>Te llevo</ion-title>
+    <ion-title>
+      Inicio
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Te llevo</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <!-- Contenido de la página Home -->
+  <p>Bienvenido a la página de inicio.</p>
 
+  <!-- Botones para redirigir a las páginas de login y registro -->
+  <ion-button expand="full" (click)="irALogin()">
+    Ir a Login
+  </ion-button>
 
-  <ion-card>
-    <img src="" alt="">
-    <img alt="Silhouette of mountains" src="" />
-    <ion-card-header>
-      <ion-card-title>Bienvenido</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Los viajes mas seguros de los alumnos del duoc para los alumnos del duoc.
-    </ion-card-content>
-  </ion-card>
-
-
-
+  <ion-button expand="full" (click)="irARegistro()">
+    Ir a Registro
+  </ion-button>
 </ion-content>
+

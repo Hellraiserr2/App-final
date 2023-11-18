@@ -20,14 +20,14 @@ export class AppComponent {
       redirecTo:'home'
     },
     {
-      name:'mapa',
+      name:'registro',
       icon: 'bug-outline',
-      redirecTo:'mapa'
+      redirecTo:'registro'
     },
     {
-      name:'formulario',
+      name:'login',
       icon: 'bug-outline',
-      redirecTo:'formulario'
+      redirecTo:'login'
     }
 
 
